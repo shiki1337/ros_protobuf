@@ -222,15 +222,21 @@ Benchmark
 序列化之空间开销
 ![output (1)](https://github.com/user-attachments/assets/39d598ab-c2ae-4ec9-9644-f7f05878ef81)
 从上图可得出如下结论：
+
 1、XML序列化（Xstream）无论在性能和简洁性上比较差。
+
 2、Thrift与Protobuf相比在时空开销方面都有一定的劣势。
+
 3、Protobuf和Avro在两方面表现都非常优越。
+
 选型建议
+
 以上描述的五种序列化和反序列化协议都各自具有相应的特点，适用于不同的场景：
 
 1、对于公司间的系统调用，如果性能要求在100ms以上的服务，基于XML的SOAP协议是一个值得考虑的方案。
 
 2、基于Web browser的Ajax，以及Mobile app与服务端之间的通讯，JSON协议是首选。对于性能要求不太高，或者以动态类型语言为主，或者传输数据载荷很小的的运用场景，JSON也是非常不错的选择。
+
 3、对于调试环境比较恶劣的场景，采用JSON或XML能够极大的提高调试效率，降低系统开发成本。
 
 4、当对性能和简洁性有极高要求的场景，Protobuf，Thrift，Avro之间具有一定的竞争关系。
