@@ -18,6 +18,7 @@ ros-protobuf-bridge是一个基于ROS和Protobuf的桥接项目，旨在实现 R
  
 4. 插件化设计: ros-protobuf-bridge 可以作为一个插件嵌入到各种复杂的ROS功能项目中。通过将该项目中的cmake 指令集成到目标项目中，可以轻松地实现基于proto数据的发布和订阅。
 
+![image](https://github.com/user-attachments/assets/ea24d5d3-59c9-4f3c-b08d-83d67ebe5c7d)
 
 
 ## 1.通过项目中dockerfile文件，构建项目镜像 
